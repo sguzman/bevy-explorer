@@ -4,3 +4,15 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+
+# Cargo.toml
+[profile.dev]
+incremental = true
+codegen-units = 256
+debug = true
+lto = "off"  # keep off in dev for speed
+
+[profile.release]
+codegen-units = 1
+lto = "thin" # combine with mold/clang for faster release links
+opt-level = 3
