@@ -24,7 +24,13 @@
     openssl
     udev
     vulkan-loader
-  ];
+  ] ++ (with xorg; [
+    libX11
+    libXcursor
+    libXi
+    libXrandr
+    libxkbcommon
+  ]);
   toolPkgs = with pkgsU; [
     # Rust toolchain
     rustc
