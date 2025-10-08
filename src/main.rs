@@ -9,7 +9,11 @@ use bevy::{
 };
 use bevy_rapier3d::prelude::*;
 
-use bevy_fps_controller::controller::*;
+use bevy_explorer::controller::CameraConfig;
+use bevy_explorer::controller::FpsController;
+use bevy_explorer::controller::FpsControllerPlugin;
+use bevy_explorer::controller::LogicalPlayer;
+use bevy_explorer::controller::RenderPlayer;
 
 const SPAWN_POINT: Vec3 = Vec3::new(0.0, 1.625, 0.0);
 
