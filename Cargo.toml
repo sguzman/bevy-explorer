@@ -10,7 +10,6 @@ bevy_rapier3d = { version = "0.31", optional = true }
 [[bin]]
 name = "bevy-explorer"
 path = "src/main.rs"
-required-features = ["rapier"]
 
 # Cargo.toml
 [profile.dev]
