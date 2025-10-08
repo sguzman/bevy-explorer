@@ -6,7 +6,6 @@ edition = "2024"
 [dependencies]
 bevy = "0.16"
 bevy_rapier3d = { version = "0.31", optional = true }
-avian3d = { version = "0.3", optional = true }
 
 [[bin]]
 name = "bevy-explorer"
