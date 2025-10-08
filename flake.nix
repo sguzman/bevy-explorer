@@ -1,5 +1,5 @@
 {
-  description = "Hello world";
+  description = "Playing with Bevy 3D";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
